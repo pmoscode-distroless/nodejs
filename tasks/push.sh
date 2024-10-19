@@ -3,11 +3,13 @@ set -e
 
 VERSIONS=$(ls -d */ | cut -f1 -d'/')
 VARIANT=$1
+CURRENT_PATH=$(pwd)
 
 for VERSION in $VERSIONS
 do
 	echo "Processing $VERSION..."
-	ABS_VERSION_FOLDER=$(realpath $VERSION)
+	ABS_VERSION_FOLDER=$CURRENT_PATH/$VERSION
+	echo "Going in to folder: $ABS_VERSION_FOLDER"
 	cd $ABS_VERSION_FOLDER
 
   apko publish $VARIANT.yaml $DH_ORGANIZATION/$ARTIFACT_NAME-$VERSION-$VARIANT:$TAG --sbom=false \
