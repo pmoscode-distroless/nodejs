@@ -1,0 +1,8 @@
+include: ../apko-base-config.yaml
+
+contents:
+  packages:
+    - nodejs-21
+
+entrypoint:
+  command: /usr/bin/node
