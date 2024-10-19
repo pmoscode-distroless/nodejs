@@ -46,7 +46,7 @@ jobs:
         id: apkodw
         with:
           repository: 'chainguard-dev/apko'
-          tag: 'v0.14.7'
+          tag: 'v0.19.1'
           fileName: 'apko_0.19.1_linux_amd64.tar.gz'
 
       - name: Install downloaded Apko binary
