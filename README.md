@@ -42,7 +42,7 @@ CMD [ "app.js" ]
 
 - wolfi-base (for debug variant)
 - wolfi-baselayout (for nondebug variant)
-- nodejs-[18|19|20|21|22]
+- nodejs-[18|19|20|21|22|23]
 
 ## Image versioning
 
