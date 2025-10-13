@@ -2,7 +2,7 @@ include: ../apko-base-config.yaml
 
 contents:
   packages:
-    - nodejs-19
+    - nodejs-24
 
 entrypoint:
   command: /usr/bin/node
